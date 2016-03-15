@@ -1,0 +1,21 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BALLZ</title>
+	<script type="text/javascript" src="http://76.28.150.193:8888/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./ballzbase.js"></script>
+	<script type="text/javascript" src="./assetmanager.js"></script>
+    <script type="text/javascript" src="./gameengine.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+	
+</head>
+<body>
+    <h1> Click in the canvas to spawn more circles!</h1>
+    <canvas id="gameWorld" width="800" height="800" style="border: 1px solid white; background: black"></canvas>
+	<input type="button" onclick="saveDemBallz()" value="Save">
+	<button onclick="loadDemBallz()">Load</button>
+    
+</body>
+</html>
