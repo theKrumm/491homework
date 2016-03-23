@@ -30,7 +30,7 @@ SOCKET.on("load", function(info) {
 	
 	for (var i = 0; i < gameEngine.entities.length; i++) {
 		if (gameEngine.entities[i] instanceof Circle) {
-			gameEngine.entities.splice(i, 1);
+			gameEngine.entities[i].removeFromWorld = true;
 		}
 	}
 	
